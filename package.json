@@ -1,0 +1,35 @@
+{
+  "name": "chat-jobsity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src",
+    "start": "node ./src",
+    "test": "mocha --timeout 100000",
+    "only-test": "mocha --inspect-brk --timeout 100000",
+    "test-bot": "mocha test/bot.test.js --timeout 10000"
+  },
+  "keywords": [],
+  "author": "Lenny Higgins",
+  "license": "",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "csv-parse": "^4.4.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.12",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "sinon": "^7.3.2",
+    "socket.io": "^2.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "nodemon": "^1.17.3",
+    "proxyquire": "1.7.4",
+    "rewire": "^4.0.1",
+    "sinon": "1.17.3",
+    "standard": "10.0.3",
+    "supertest": "^4.0.2"
+  }
+}
